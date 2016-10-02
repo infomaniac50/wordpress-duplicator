@@ -18,7 +18,7 @@ $ mv template wpclone
 
 Copy `installer.php` and `*.archive.zip` files into `wpclone/wordpress`.
 
-Set secure passwords in `wpclone/docker-compose.yml`.
+If you plan to run on production set secure passwords in `wpclone/docker-compose.yml`!
 
 Then start up the containers.
 
@@ -29,4 +29,4 @@ $ docker-compose up
 
 If the mysql container is started the first time it takes a while because the database is initialized.
 
-Then navigate to [http://localhost:8080/installer.php`](http://localhost:8080/installer.php)
+Then navigate to [http://localhost:8080/installer.php](http://localhost:8080/installer.php)
