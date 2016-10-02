@@ -42,4 +42,4 @@ $ docker-compose up
 
 If the mysql container is started the first time it takes a while because the database is initialized.
 
-Then navigate to `http://localhost:8080/installer.php`
+Then navigate to [http://localhost:8080/installer.php`](http://localhost:8080/installer.php)
