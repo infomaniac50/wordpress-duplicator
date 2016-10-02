@@ -4,34 +4,21 @@ This image sets up the environment to clone and run a wordpress archive created 
 
 ## Setup
 
+Download the template files.
+
 ```bash
-$ mkdir -p wpclone/wordpress
+$ curl -L https://github.com/drlogout/wordpress-duplicator/blob/master/template.tar.gz\?raw\=true | tar xz
+```
+
+Rename the folder.
+
+```bash
+$ mv template wpclone
 ```
 
 Copy `installer.php` and `*.archive.zip` files into `wpclone/wordpress`.
 
-Create a `docker-compose.yml` file in the `wpclone` directory with following content (set secure passwords!):
-```yml
-version: '2'
-
-services:
-  wordpress:
-    image: drlogout/wordpress-duplicator
-    ports:
-      - 8080:80
-    volumes:
-      - "./wordpress:/var/www/html"
-
-  mysql:
-    image: mariadb:10.1.18
-    environment:
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress # change this!
-      MYSQL_ROOT_PASSWORD: root # change this!
-    volumes:
-      - "./mysql:/var/lib/mysql"
-```
+Set secure passwords in `wpclone/docker-compose.yml`.
 
 Then start up the containers.
 
