@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  wordpress:
+    image: drlogout/wordpress-duplicator:latest
+    ports:
+      - 8080:80
+    volumes:
+      - "./wordpress:/var/www/html"
+
+  mysql:
+    # image: mariadb:10.1.18
+    build: .
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - "./mysql:/var/lib/mysql"
