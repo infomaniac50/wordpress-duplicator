@@ -7,13 +7,13 @@ This image sets up the environment to clone and run a wordpress archive created 
 Download the template files.
 
 ```bash
-$ curl -L https://github.com/drlogout/wordpress-duplicator/blob/master/template.tar.gz\?raw\=true | tar xz
+$ curl -L https://github.com/drlogout/wordpress-duplicator/blob/master/duplicator-template.tar.gz\?raw\=true | tar xz
 ```
 
 Rename the folder.
 
 ```bash
-$ mv template wpclone
+$ mv duplicator-template wpclone
 ```
 
 Copy `installer.php` and `*.archive.zip` files into `wpclone/wordpress`.
@@ -27,6 +27,6 @@ $ cd wpclone
 $ docker-compose up
 ```
 
-If the mysql container is started the first time it takes a while because the database is initialized.
+If the mysql container is started the first time it takes a while until the database is initialized.
 
 Then navigate to [http://localhost:8080/installer.php](http://localhost:8080/installer.php)
