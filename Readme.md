@@ -1,6 +1,6 @@
 # wordpress-duplicator
 
-This image sets up the environment to clone and run a wordpress archive created by [Wordpress Duplicator Plugin](https://de.wordpress.org/plugins/duplicator).
+This image sets up the environment to clone and run a wordpress archive created by the [Wordpress Duplicator Plugin](https://de.wordpress.org/plugins/duplicator).
 
 ## Setup
 
