@@ -30,3 +30,7 @@ $ docker-compose up
 If the mysql container is started the first time it takes a while until the database is initialized.
 
 Then navigate to [http://localhost:8080/installer.php](http://localhost:8080/installer.php)
+
+Enter the database settings as shown in the image below:
+
+![DB settings](https://github.com/drlogout/wordpress-duplicator/raw/master/images/installer-db-settings.png "DB settings")
