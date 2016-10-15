@@ -4,7 +4,7 @@ This image sets up the environment to clone and run a wordpress archive created 
 
 ## Setup
 
-Download the template files.
+Download the template files, which contains a docker-compose file and the project structure.
 
 ```bash
 $ curl -L https://github.com/drlogout/wordpress-duplicator/blob/master/duplicator-template.tar.gz\?raw\=true | tar xz
@@ -16,7 +16,7 @@ Rename the folder.
 $ mv duplicator-template wpclone
 ```
 
-Copy `installer.php` and `*.archive.zip` files into `wpclone/wordpress`.
+Copy `installer.php` and `*.archive.zip` files into `wpclone/wordpress`. 
 
 If you plan to run this in production set secure passwords in `wpclone/docker-compose.yml`!
 
