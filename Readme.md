@@ -16,7 +16,7 @@ Rename the folder.
 $ mv duplicator-template wpclone
 ```
 
-Copy `installer.php` and `*.archive.zip` files into `wpclone/wordpress`.
+Copy your `*.archive.zip` file into `wpclone/wordpress`.
 
 If you plan to run this in production set secure passwords in `wpclone/docker-compose.yml`!
 
