@@ -2,7 +2,7 @@ version: '2'
 
 services:
   wordpress:
-    image: drlogout/wordpress-duplicator:latest
+    image: drlogout/wordpress-duplicator:v1.0.0
     ports:
       - 8080:80
     volumes:
