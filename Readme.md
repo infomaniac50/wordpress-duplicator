@@ -4,7 +4,7 @@ This image sets up the environment to clone and run a wordpress archive created 
 
 ## Setup
 
-Download the template files.
+Download the template files, which contains a docker-compose file and the project structure.
 
 ```bash
 $ curl -L https://github.com/drlogout/wordpress-duplicator/blob/master/duplicator-template.tar.gz\?raw\=true | tar xz
@@ -34,3 +34,9 @@ Then navigate to [http://localhost:8080/installer.php](http://localhost:8080/ins
 Enter the database settings as shown in the image below:
 
 ![DB settings](https://github.com/drlogout/wordpress-duplicator/raw/master/images/installer-db-settings.png "DB settings")
+
+### Opcache
+
+For devlopment you may want to disable opcache. You can add the following line to the htaccess file in `wpclone/wordpress/.htaccess`:
+
+`php_flag opcache.enable Off`
