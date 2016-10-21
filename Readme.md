@@ -27,7 +27,7 @@ $ cd wpclone
 $ docker-compose up
 ```
 
-If the mysql container is started the first time it takes a while until the database is initialized.
+When the mysql container is started the first time it takes a while until the database is initialized.
 
 Then navigate to [http://localhost:8080/installer.php](http://localhost:8080/installer.php)
 
